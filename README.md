@@ -5,6 +5,11 @@ This Python script for **Autodesk Maya** converts all materials in a scene—reg
 
 ---
 
+### Use Case  
+I created this script to solve a problem when working with **USDz scenes** opened in Maya. Maya handles the `usdPreviewSurface` shader natively, but textures tend to disappear after converting or exporting the scene. This script converts `usdPreviewSurface` and other complex shaders into simpler **Phong materials**, while ensuring that all texture links remain intact, so you can transfer the scene to **3ds Max** without losing important textures.
+
+---
+
 ## Features  
 - **Universal Material Support**: Works with all shaders:
   - `usdPreviewSurface`  
